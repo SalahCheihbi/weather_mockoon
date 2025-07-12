@@ -1,0 +1,92 @@
+name: weather_mockoon
+description: "Weather mockoon"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.8.0+1 # Network
+  envied: ^1.1.1 # Environment Variables
+  flex_color_scheme: ^8.1.1 # Color Scheme
+  auto_route: ^10.0.1 # Auto Route
+  flutter_hooks: ^0.21.2 # Hooks
+  flutter_screenutil: ^5.9.3 # Screen Util
+  flutter_svg: ^2.0.17
+  fpdart: ^1.1.1 # Functional Programming
+  freezed_annotation: ^2.4.4 # Freezed
+  hooks_riverpod: ^2.6.1 # Riverpod
+  intl: ^0.20.2
+  json_annotation: ^4.9.0 # JSON Serialization
+  logger: ^2.5.0 # Logger
+  skeletonizer: ^1.4.3 # Skeleton Loader
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  auto_route_generator: null # Auto Route Generator
+  build_runner: ^2.4.15 # Build Runner
+  custom_lint: ^0.7.0 # Custom Lint
+  envied_generator: ^1.1.1 # Environment Variables Generator
+  flutter_gen_runner: ^5.5.0+1 # Flutter Gen Runner
+  flutter_lints: ^5.0.0
+  freezed: ^2.5.8 # Freezed
+  json_serializable: ^6.9.4 # JSON Serialization
+  lint: ^2.3.0 # Lint
+  riverpod_lint: ^2.6.2 # Riverpod Lint
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/images/png/
+
+  fonts:
+    - family: MonaSans
+      fonts:
+        - asset: assets/fonts/MonaSans-Black.otf
+          weight: 900
+        - asset: assets/fonts/MonaSans-ExtraBold.otf
+          weight: 800
+        - asset: assets/fonts/MonaSans-Bold.otf
+          weight: 700
+        - asset: assets/fonts/MonaSans-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/MonaSans-Medium.otf
+          weight: 500
+        - asset: assets/fonts/MonaSans-Regular.otf
+          weight: 400
+        - asset: assets/fonts/MonaSans-Light.otf
+          weight: 300
+        - asset: assets/fonts/MonaSans-ExtraLight.otf
+          weight: 200
