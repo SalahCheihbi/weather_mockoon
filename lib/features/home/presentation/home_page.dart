@@ -53,7 +53,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                   );
                 },
                 loadInProgress: (_) =>
-                    const Center(child: CustomLoadingWidget()),
+                    const Center(child: CustomLoadingWidget(color: whiteColor)),
                 loadSuccess: (value) {
                   return RefreshIndicator(
                     onRefresh: () async {
